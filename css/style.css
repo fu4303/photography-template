@@ -1,22 +1,6 @@
 /* Ionicon pulse animation */
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans");
-@keyframes pulse_animation {
-  0% {
-    transform: scale(1); }
-  30% {
-    transform: scale(1); }
-  40% {
-    transform: scale(1.08); }
-  50% {
-    transform: scale(1); }
-  60% {
-    transform: scale(1); }
-  70% {
-    transform: scale(1.05); }
-  80% {
-    transform: scale(1); }
-  100% {
-    transform: scale(1); } }
+
 
 ion-icon {
   animation-name: pulse_animation;
@@ -49,7 +33,7 @@ a,
 p,
 li,
 blockquote {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 500;
   font-size: 18px; }
 
