@@ -1,6 +1,22 @@
 /* Ionicon pulse animation */
-@import url("https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans");
-
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@keyframes pulse_animation {
+  0% {
+    transform: scale(1); }
+  30% {
+    transform: scale(1); }
+  40% {
+    transform: scale(1.08); }
+  50% {
+    transform: scale(1); }
+  60% {
+    transform: scale(1); }
+  70% {
+    transform: scale(1.05); }
+  80% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1); } }
 
 ion-icon {
   animation-name: pulse_animation;
@@ -11,8 +27,9 @@ ion-icon {
 
 /* AOS */
 /* 1 box */
+a,
 .name {
-  font-family: 'Kaushan Script', cursive; }
+  font-family: 'Montserrat', sans-serif; }
 
 /* 
 
@@ -29,13 +46,12 @@ h6,
     font-weight: 300;
     
 }*/
-a,
 p,
 li,
 blockquote {
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
-  font-size: 15px; }
+  font-size: 18px; }
 
 .button {
   border: none !important; }
@@ -81,9 +97,10 @@ blockquote {
 .navbar-item.has-dropdown.is-active .navbar-dropdown {
   display: block; }
 
-.navbar-menu .navbar-start a:hover {
-  background-color: transparent !important;
-  color: #FE5F55 !important; }
+.navbar-item.navbar-center {
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center; }
 
 .card-footer,
 .card-footer-item,
@@ -7061,3 +7078,4 @@ label.panel-block {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
+
