@@ -29,7 +29,8 @@ ion-icon {
 /* 1 box */
 a,
 .name {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300; }
 
 /* 
 
@@ -139,21 +140,9 @@ body {
 .transparent {
   background-color: transparent !important; }
 
-/* aside  {
-  height: 100vh;
-  width: 280px;
-  position: fixed;
-  z-index: 9000;
-    background-color: white;
-  top: 150px;
-  left: -20px;
-  overflow-x: hidden;
-  padding-top: 20px;
-
-
-} */
-aside {
-  padding: 0 !important; }
+.input {
+  border: none !important;
+  border-bottom: 2px solid #7a7a7a !important; }
 
 /* Bulma's files */
 /*! bulma.io v0.7.3 | MIT License | github.com/jgthms/bulma */
@@ -7078,4 +7067,3 @@ label.panel-block {
 .footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
-
