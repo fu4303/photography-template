@@ -59,7 +59,7 @@
 <body>
 
 
-    <div class="section ">
+    <div class="section is-paddingless">
 
         <!--- Nav  --->
         <div class="container transparent">
@@ -84,7 +84,7 @@
 
                             <div class="navbar-end ">
 
-                                 <a class="navbar-item has-text-primary " href="index.html">
+                                <a class="navbar-item has-text-primary " href="index.html">
                                     home
                                 </a>
 
@@ -107,7 +107,7 @@
 
     </div>
     <!---  End Nav    --->
-    <div class="section ">
+    <div class="section  is-paddingless">
 
 
         <div class="container">
@@ -121,23 +121,24 @@
 
                 </div>
                 <div class="column has-text-centered">
+                    <div class="box">
+                        <div class="notification has-background-white">
+                            <div class="card-content has-background-white">
 
-                    <div class="notification has-background-white">
-                        <div class="card-content has-background-white">
+                                <p class="title name is-left ">
+                                    About me
+                                </p>
 
-                            <p class="title name is-left is-1">
-                                About me
-                            </p>
-
-
-                            <div class="content name has-text-left ">
-                                Lorem ipsum dolor amet la croix cardigan stumptown palo santo put a bird on it raw denim hexagon, small batch jean shorts waistcoat. Taxidermy mustache vice vexillologist irony gluten-free VHS, tumblr literally. Aesthetic pabst post-ironic raclette succulents. Synth thundercats blog slow-carb cray. Cray art party mumblecore, four dollar toast selfies locavore hammock vinyl. Leggings tattooed deep v gentrify tacos.
+                                <p></p>
+                                <div class="content name has-text-left ">
+                                    Lorem ipsum dolor amet la croix cardigan stumptown palo santo put a bird on it raw denim hexagon, small batch jean shorts waistcoat. Taxidermy mustache vice vexillologist irony gluten-free VHS, tumblr literally. Aesthetic pabst post-ironic raclette succulents. Synth thundercats blog slow-carb cray. Cray art party mumblecore, four dollar toast selfies locavore hammock vinyl. Leggings tattooed deep v gentrify tacos.
+                                </div>
+                                <div class="content name has-text-left ">
+                                    Adaptogen copper mug health goth, coloring book twee flannel tilde typewriter four dollar toast knausgaard 8-bit iceland unicorn YOLO readymade. Jianbing scenester vice street art hexagon stumptown. Kinfolk 8-bit banjo kogi craft beer pabst cray seitan scenester tacos hella +1.
+                                </div>
                             </div>
-                            <div class="content name has-text-left ">
-                                Adaptogen copper mug health goth, coloring book twee flannel tilde typewriter four dollar toast knausgaard 8-bit iceland unicorn YOLO readymade.  Jianbing scenester vice street art hexagon stumptown. Kinfolk 8-bit banjo kogi craft beer pabst cray seitan scenester tacos hella +1.
-                            </div>
+
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -151,41 +152,41 @@
 
 
 
-        <!-- AOS -->
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-        <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
-        <script>
-            // Bulma Navbar-Toggle
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script>
+        // Bulma Navbar-Toggle
 
-            (function() {
-                var burger = document.querySelector('.burger');
-                var menu = document.querySelector('#' + burger.dataset.target);
-                burger.addEventListener('click', function() {
-                    burger.classList.toggle('is-active');
-                    menu.classList.toggle('is-active');
-                });
-            })();
-
-            // Drop Down
-
-            $(".navbar-item.has-dropdown").click(function(e) {
-                if ($(".navbar-burger").is(':visible')) {
-                    $(this).toggleClass("is-active");
-                }
+        (function() {
+            var burger = document.querySelector('.burger');
+            var menu = document.querySelector('#' + burger.dataset.target);
+            burger.addEventListener('click', function() {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
             });
-            $(".navbar-item > .navbar-link").click(function(e) {
-                if ($(".navbar-burger").is(':visible')) {
-                    e.preventDefault();
-                }
-            });
-            $(window).resize(function(e) {
-                if (!$(".navbar-burger").is(':visible') && $(".navbar-item.has-dropdown.is-active").length) {
-                    $(".navbar-item.has-dropdown.is-active").removeClass('is-active');
-                }
-            });
+        })();
 
-        </script>
+        // Drop Down
+
+        $(".navbar-item.has-dropdown").click(function(e) {
+            if ($(".navbar-burger").is(':visible')) {
+                $(this).toggleClass("is-active");
+            }
+        });
+        $(".navbar-item > .navbar-link").click(function(e) {
+            if ($(".navbar-burger").is(':visible')) {
+                e.preventDefault();
+            }
+        });
+        $(window).resize(function(e) {
+            if (!$(".navbar-burger").is(':visible') && $(".navbar-item.has-dropdown.is-active").length) {
+                $(".navbar-item.has-dropdown.is-active").removeClass('is-active');
+            }
+        });
+
+    </script>
 
 
 </body>
