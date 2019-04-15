@@ -140,9 +140,14 @@ body {
 .transparent {
   background-color: transparent !important; }
 
+.textarea,
 .input {
+  border: none !important; }
+
+.border_bottom {
   border: none !important;
-  border-bottom: 2px solid #7a7a7a !important; }
+  border-radius: 0px !important;
+  border-bottom: 1px solid #c3c4c3 !important; }
 
 /* Bulma's files */
 /*! bulma.io v0.7.3 | MIT License | github.com/jgthms/bulma */
