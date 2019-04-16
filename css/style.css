@@ -1,5 +1,29 @@
 /* Ionicon pulse animation */
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@keyframes pulse_animation {
+  0% {
+    transform: scale(1); }
+  30% {
+    transform: scale(1); }
+  40% {
+    transform: scale(1.08); }
+  50% {
+    transform: scale(1); }
+  60% {
+    transform: scale(1); }
+  70% {
+    transform: scale(1.05); }
+  80% {
+    transform: scale(1); }
+  100% {
+    transform: scale(1); } }
+
+ion-icon {
+  animation-name: pulse_animation;
+  animation-duration: 5000ms;
+  transform-origin: 10% 100%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
 
 /* AOS */
 /* 1 box */
@@ -11,6 +35,9 @@ a,
 .logo {
   font-family: 'Montserrat', sans-serif !important;
   font-weight: 600 !important; }
+
+.view_more {
+  line-height: 9.125 !important; }
 
 /* 
 
@@ -89,12 +116,6 @@ footer,
   border: none !important;
   background-color: #FFFFFF !important; }
 
-.section #navMenu,
-.navbar-brand,
-.navbar-end {
-  background-color: #FFFFFF;
-  background-color: #FFFFFF; }
-
 .dribbble_bg {
   background-color: #ea4c89 !important; }
 
@@ -114,6 +135,7 @@ html {
   box-shadow: none !important; }
 
 body {
+  background-color: #f2f2f2 !important;
   font-family: none !important; }
 
 .transparent {
@@ -127,6 +149,9 @@ body {
   border: none !important;
   border-radius: 0px !important;
   border-bottom: 1px solid #c3c4c3 !important; }
+
+.opacity {
+  opacity: 0.6; }
 
 /* Bulma's files */
 /*! bulma.io v0.7.3 | MIT License | github.com/jgthms/bulma */
