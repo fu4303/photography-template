@@ -64,44 +64,40 @@
         <!--- Nav  --->
         <div class="container transparent">
 
-            <div class="hero-head transparent">
+            <!--- Nav  --->
+        <div class="container ">
 
-                <nav class="navbar transparent">
-                    <div class="container transparent">
-                        <div class="navbar-brand  transparent">
+            <div class="hero-head ">
 
-                            <a class="navbar-item has-text-grey  name" href="index.html">
-                                <p class="subtitle is-bold logo">Georgina Lukacs</p>
-                            </a>
-                            <span class="navbar-burger burger" data-target="navMenu">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </span>
-                        </div>
-                        <div id="navMenu" class="navbar-menu has-text-black">
+                <div class="columns is-mobile is-marginless">
+                    <div class="column">
+                        <p></p>
+                    </div>
+                    <div class="column ">
+                        <p class="subtitle is-bold logo ">Georgina Lukacs</p>
 
+                    </div>
+                    <div class="column   ">
 
-
-                            <div class="navbar-end ">
-
-                                <a class="navbar-item has-text-black logo name" href="index.html">
-                                    home
-                                </a>
-
-                                <a class="navbar-item has-text-black logo name" href="about.html">
-                                    about
-                                </a>
-                                <a class="navbar-item has-text-black logo name" href="contact.html">
-                                    contact
-                                </a>
-                            </div>
-
-
+                        <div class="menu-collapsed ">
+                            <div class="bar"></div>
+                            <nav>
+                                <ul>
+                                    <li><a href="./index.html">home</a></li>
+                                    <li><a href="./about.html">about</a></li>
+                                    <li><a href="./contact.html">contact</a></li>
+                                </ul>
+                            </nav>
                         </div>
                     </div>
-                </nav>
+                </div>
             </div>
+
+
+
+        </div>
+
+        <!---  End Nav    --->
 
 
 
@@ -123,16 +119,16 @@
 
                 </div>
                 <div class="column has-text-centered">
-                    <div class="box">
-                        <div class="notification has-background-white">
-                            <div class="card-content has-background-white">
+                    <div class="box transparent">
+                        <div class="notification transparent">
+                            <div class="card-content transparent">
 
                                 <p class="title name has-text-left ">
                                     About me
                                 </p>
 
                                 <p></p>
-                                <div class="box"></div>
+                                <div class="box transparent"></div>
                                 <div class="content name has-text-left ">
                                     Lorem ipsum dolor amet la croix cardigan stumptown palo santo put a bird on it raw denim hexagon, small batch jean shorts waistcoat. Taxidermy mustache vice vexillologist irony gluten-free VHS, tumblr literally. Aesthetic pabst post-ironic raclette succulents. Synth thundercats blog slow-carb cray. Cray art party mumblecore, four dollar toast selfies locavore hammock vinyl. Leggings tattooed deep v gentrify tacos.
                                 </div>
@@ -183,33 +179,9 @@
 
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
     <script>
-        // Bulma Navbar-Toggle
-
-        (function() {
-            var burger = document.querySelector('.burger');
-            var menu = document.querySelector('#' + burger.dataset.target);
-            burger.addEventListener('click', function() {
-                burger.classList.toggle('is-active');
-                menu.classList.toggle('is-active');
-            });
-        })();
-
-        // Drop Down
-
-        $(".navbar-item.has-dropdown").click(function(e) {
-            if ($(".navbar-burger").is(':visible')) {
-                $(this).toggleClass("is-active");
-            }
-        });
-        $(".navbar-item > .navbar-link").click(function(e) {
-            if ($(".navbar-burger").is(':visible')) {
-                e.preventDefault();
-            }
-        });
-        $(window).resize(function(e) {
-            if (!$(".navbar-burger").is(':visible') && $(".navbar-item.has-dropdown.is-active").length) {
-                $(".navbar-item.has-dropdown.is-active").removeClass('is-active');
-            }
+     <script>
+        $(".menu-collapsed").click(function() {
+            $(this).toggleClass("menu-expanded");
         });
 
     </script>
