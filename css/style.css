@@ -109,7 +109,7 @@ blockquote {
   width: 36px;
   z-index: 1;
   cursor: pointer;
-  right: 130px !important; }
+  right: 22px !important; }
   .menu-collapsed ul {
     transition: all 0s;
     position: fixed;
