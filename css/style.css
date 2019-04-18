@@ -1,6 +1,7 @@
 /* AOS */
 /* 1 box */
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+.image-hover-text .image-hover-text-title,
 a,
 .name {
   font-family: 'Montserrat', sans-serif;
@@ -109,7 +110,7 @@ blockquote {
   width: 36px;
   z-index: 1;
   cursor: pointer;
-  right: 22px !important; }
+  right: 130px !important; }
   .menu-collapsed ul {
     transition: all 0s;
     position: fixed;
@@ -186,6 +187,54 @@ blockquote {
 .menu-expanded .bar:after {
   transform: rotate(-45deg); }
 
+.image-hover-text-container {
+  position: relative;
+  width: auto;
+  height: auto;
+  transition: all 0.2s linear; }
+
+.image-hover-image {
+  display: block; }
+
+/* Make the image round */
+.image-hover-image img {
+  border-radius: 0%;
+  width: 400px; }
+
+.image-hover-text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  opacity: 0;
+  cursor: default;
+  transition: opacity 0.2s linear; }
+
+.image-hover-text:hover {
+  opacity: 1; }
+
+.image-hover-text-bubble {
+  position: relative;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  right: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(218, 211, 211, 0.9);
+  border-radius: 0%;
+  margin: 0 auto;
+  padding: 30% 0px;
+  overflow: hidden;
+  font-size: 17px;
+  text-align: center;
+  word-wrap: break-word; }
+
+.image-hover-text .image-hover-text-title {
+  font-size: 25px;
+  display: block; }
+
 .card-footer,
 .card-footer-item,
 footer,
@@ -228,7 +277,7 @@ body {
   border-bottom: 1px solid #c3c4c3 !important; }
 
 .opacity {
-  opacity: 0.6; }
+  opacity: 0.75; }
 
 /* Bulma's files */
 /*! bulma.io v0.7.3 | MIT License | github.com/jgthms/bulma */
