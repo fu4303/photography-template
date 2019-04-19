@@ -1,4 +1,4 @@
-# Georgina-lucas-photography
-Photography
+-
+Photography template
 
-https://michael-andreuzza.github.io/Georgina-lucas-photography/
+https://michael-andreuzza.github.io/photography-template/
