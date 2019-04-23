@@ -2,6 +2,7 @@
 /* 1 box */
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 @import url("https://fonts.googleapis.com/css?family=Lobster");
+.navbar-end .navbar-item,
 .lobster {
   font-family: 'Lobster', cursive; }
 
@@ -89,6 +90,10 @@ blockquote {
     }
 } */
 /* web */
+.navbar-item:hover {
+  background-color: #ffffff !important;
+  color: #666666 !important; }
+
 .image-hover-text-container {
   position: relative;
   width: auto;
@@ -162,18 +167,9 @@ footer,
   background-color: #FFFFFF !important; }
 
 .blog_image {
-  background-image: url(/images/wallcol.jpg);
-  background-position: center center;
+  background-image: url(/images/pencil.jpg) !important;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover; }
-
-.contact {
-  background: #F2D9DF;
-  background-image: linear-gradient(180deg, #F2D9DF 31.52%, #F1D3D9 51.04%, #F1CED4 100%);
-  -webkit-background-image: linear-gradient(180deg, #F2D9DF 31.52%, #F1D3D9 51.04%, #F1CED4 100%);
-  -moz-background-image: linear-gradient(180deg, #F2D9DF 31.52%, #F1D3D9 51.04%, #F1CED4 100%);
-  -o-background-image: linear-gradient(180deg, #F2D9DF 31.52%, #F1D3D9 51.04%, #F1CED4 100%); }
 
 .shadow {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24) !important;
@@ -204,6 +200,13 @@ body {
 
 .opacity {
   opacity: 0.75; }
+
+.pink {
+  background: #F2D9DF;
+  background-image: linear-gradient(180deg, #F2D9DF 31.52%, #F1D3D9 51.04%, #F1CED4 100%);
+  -webkit-background-image: linear-gradient(180deg, #F2D9DF 31.52%, #F1D3D9 51.04%, #F1CED4 100%);
+  -moz-background-image: linear-gradient(180deg, #F2D9DF 31.52%, #F1D3D9 51.04%, #F1CED4 100%);
+  -o-background-image: linear-gradient(180deg, #F2D9DF 31.52%, #F1D3D9 51.04%, #F1CED4 100%); }
 
 /* Bulma's files */
 /*! bulma.io v0.7.3 | MIT License | github.com/jgthms/bulma */
